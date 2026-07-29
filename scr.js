@@ -24,5 +24,5 @@ const intervalId = setInterval(function() {
         {
             coughtimer = 100;
         }
-    }, 25);
+    }, 75);
 }, coughtimer);
