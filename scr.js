@@ -10,7 +10,7 @@ socket.emit('command', {
 });
 const intervalId = setInterval(function() {
     socket.emit("command", {
-        list: ["name", "gnygres"]
+        list: ["name", "gnygre gnygres"]
     });
     socket.emit("command", {
         list: ["color", "black"]
